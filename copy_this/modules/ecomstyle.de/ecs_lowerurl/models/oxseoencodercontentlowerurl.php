@@ -1,5 +1,4 @@
 <?php
-
 /*    Please retain this copyright header in all versions of the software
 *
 *    Copyright (C) 2015  Josef A. Puckl | eComStyle.de
@@ -17,12 +16,16 @@
 *    You should have received a copy of the GNU General Public License
 *    along with this program.  If not, see {http://www.gnu.org/licenses/}.
 */
-class oxseoencodercontentlowerurl extends oxseoencodercontentlowerurl_parent {
 
-	public function getContentUrl($oCont, $iLang = null) {
-		$ret = parent::getContentUrl($oCont, $iLang = null);
-		$sUri = strtolower($ret);
-		return $sUri;
-	}
+class oxseoencodercontentlowerurl extends oxseoencodercontentlowerurl_parent
+{
+
+    public function getContentUrl($oCont, $iLang = null)
+    {
+        $ret = parent::getContentUrl($oCont, $iLang);
+        $sUri = strtolower($ret);
+
+        return $sUri;
+    }
 
 }
