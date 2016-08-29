@@ -22,8 +22,7 @@ $aModule = array(
     'id'            => 'ecs_lowerurl',
     'title'         => '<strong style="color:#04B431;">e</strong><strong>ComStyle.de</strong>:  <i>LowerURL</i>',
     'description'   => 'Gro&szlig;buchstaben in URL&acute;s werden in Kleinbuchstaben umgewandelt.<br>
-                        <span style="color: #CC0000">Nach der Modulaktivierung unter Stammdaten/Grundeinstellungen/SEO auf den Button "SEO URLs neu berechnen" klicken!</span>
-                        <br><iframe frameborder="no" width="600px" height="400px" src="https://ssl-account.com/incl.oxidtheme.de/gratis.html"></iframe>',
+                        <span style="color: #CC0000">Nach der Modulaktivierung unter Stammdaten/Grundeinstellungen/SEO auf den Button "SEO URLs neu berechnen" klicken!</span>',
     'thumbnail'     => 'ecs.png',
     'version'       => '1.0',
     'author'        => '<strong style="font-size: 17px;color:#04B431;">e</strong><strong style="font-size: 16px;">ComStyle.de</strong>',
