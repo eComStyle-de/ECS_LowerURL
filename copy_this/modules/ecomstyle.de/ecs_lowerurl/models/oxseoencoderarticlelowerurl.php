@@ -1,4 +1,5 @@
 <?php
+
 /*    Please retain this copyright header in all versions of the software
 *
 *    Copyright (C) 2015  Josef A. Puckl | eComStyle.de
@@ -23,6 +24,22 @@ class oxseoencoderarticlelowerurl extends oxseoencoderarticlelowerurl_parent
     public function getArticleUrl($oArticle, $iLang = null, $iType = 0)
     {
         $ret = parent::getArticleUrl($oArticle, $iLang, $iType);
+        $sUri = strtolower($ret);
+
+        return $sUri;
+    }
+
+    /**
+     * return article main url, with path of its default category
+     *
+     * @param oxArticle $oArticle product
+     * @param int $iLang language id
+     *
+     * @return string
+     */
+    public function getArticleMainUrl($oArticle, $iLang = null)
+    {
+        $ret = parent::getArticleMainUrl($oArticle, $iLang);
         $sUri = strtolower($ret);
 
         return $sUri;
