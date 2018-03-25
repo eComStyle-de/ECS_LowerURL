@@ -17,12 +17,32 @@
 *    You should have received a copy of the GNU General Public License
 *    along with this program.  If not, see {http://www.gnu.org/licenses/}.
 */
-class oxseoencoderarticlelowerurl extends oxseoencoderarticlelowerurl_parent {
 
-	public function getArticleUrl($oArticle, $iLang = null, $iType = 0) {
-		$ret = parent::getArticleUrl($oArticle, $iLang = null, $iType = 0);
-		$sUri = strtolower($ret);
-		return $sUri;
-	}
+class oxseoencoderarticlelowerurl extends oxseoencoderarticlelowerurl_parent
+{
+
+    public function getArticleUrl($oArticle, $iLang = null, $iType = 0)
+    {
+        $ret = parent::getArticleUrl($oArticle, $iLang, $iType);
+        $sUri = strtolower($ret);
+
+        return $sUri;
+    }
+
+    /**
+     * return article main url, with path of its default category
+     *
+     * @param oxArticle $oArticle product
+     * @param int $iLang language id
+     *
+     * @return string
+     */
+    public function getArticleMainUrl($oArticle, $iLang = null)
+    {
+        $ret = parent::getArticleMainUrl($oArticle, $iLang);
+        $sUri = strtolower($ret);
+
+        return $sUri;
+    }
 
 }

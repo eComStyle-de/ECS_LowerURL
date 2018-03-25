@@ -1,5 +1,4 @@
 <?php
-
 /*    Please retain this copyright header in all versions of the software
 *
 *    Copyright (C) 2015  Josef A. Puckl | eComStyle.de
@@ -17,12 +16,33 @@
 *    You should have received a copy of the GNU General Public License
 *    along with this program.  If not, see {http://www.gnu.org/licenses/}.
 */
-class oxseoencodercategorylowerurl extends oxseoencodercategorylowerurl_parent {
 
-	public function getCategoryUrl($oCategory, $iLang = null) {
-		$ret = parent::getCategoryUrl($oCategory, $iLang = null);
-		$sUri = strtolower($ret);
-		return $sUri;
-	}
+class oxseoencodercategorylowerurl extends oxseoencodercategorylowerurl_parent
+{
+
+    public function getCategoryUrl($oCategory, $iLang = null)
+    {
+        $ret = parent::getCategoryUrl($oCategory, $iLang);
+        $sUri = strtolower($ret);
+
+        return $sUri;
+    }
+
+    /**
+     * Returns category lowercase SEO url for specified page
+     *
+     * @param oxcategory $oCategory category object
+     * @param int $iPage            page tu prepare number
+     * @param int $iLang            language
+     * @param bool $blFixed         fixed url marker (default is null)
+     *
+     * @return string
+     */
+    public function getCategoryPageUrl($oCategory, $iPage, $iLang = null, $blFixed = null)
+    {
+        $url = parent::getCategoryPageUrl($oCategory, $iPage, $iLang, $blFixed);
+
+        return strtolower($url);
+    }
 
 }

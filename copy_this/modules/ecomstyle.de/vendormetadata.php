@@ -8,4 +8,4 @@
  *      All rights reserved - Alle Rechte vorbehalten
  *   *********************************************************************************************
  */
- $sVendorMetadataVersion = '1.0';
+$sVendorMetadataVersion = '1.0';

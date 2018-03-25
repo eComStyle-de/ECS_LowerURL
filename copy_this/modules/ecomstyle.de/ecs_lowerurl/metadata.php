@@ -18,24 +18,23 @@
  */
 
 $sMetadataVersion = '1.1';
-$aModule = array(
+$aModule = [
     'id'            => 'ecs_lowerurl',
     'title'         => '<strong style="color:#04B431;">e</strong><strong>ComStyle.de</strong>:  <i>LowerURL</i>',
     'description'   => 'Gro&szlig;buchstaben in URL&acute;s werden in Kleinbuchstaben umgewandelt.<br>
                         <span style="color: #CC0000">Nach der Modulaktivierung unter Stammdaten/Grundeinstellungen/SEO auf den Button "SEO URLs neu berechnen" klicken!</span>',
     'thumbnail'     => 'ecs.png',
-    'version'       => '1.0',
+    'version'       => '1.1',
     'author'        => '<strong style="font-size: 17px;color:#04B431;">e</strong><strong style="font-size: 16px;">ComStyle.de</strong>',
     'email'         => 'info@ecomstyle.de',
     'url'           => 'http://ecomstyle.de',
-    'extend'        => array(
-	    'oxseoencoderarticle'       => 'ecomstyle.de/ecs_lowerurl/models/oxseoencoderarticlelowerurl',
-	    'oxseoencodercategory'      => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodercategorylowerurl',
-	    'oxseoencodercontent'       => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodercontentlowerurl',
-	    'oxseoencodermanufacturer'  => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodermanufacturerlowerurl',
-	    'oxseoencodertag'           => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodertaglowerurl',
+    'extend'        => [
+        'oxseoencoderarticle'       => 'ecomstyle.de/ecs_lowerurl/models/oxseoencoderarticlelowerurl',
+        'oxseoencodercategory'      => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodercategorylowerurl',
+        'oxseoencodercontent'       => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodercontentlowerurl',
+        'oxseoencodermanufacturer'  => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodermanufacturerlowerurl',
+        'oxseoencodertag'           => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodertaglowerurl',
         'oxseoencoderrecomm'        => 'ecomstyle.de/ecs_lowerurl/models/oxseoencoderrecommlowerurl',
         'oxseoencodervendor'        => 'ecomstyle.de/ecs_lowerurl/models/oxseoencodervendorlowerurl',
-    )
-);
-?>
+    ]
+];
